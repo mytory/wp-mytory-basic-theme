@@ -11,6 +11,9 @@
           <? endwhile; ?>
         </ul>
       <? endif; ?>
+      <? if(function_exists('wp_pagenavi')){
+        wp_pagenavi();
+      } ?>
     </div>
   </div>
 <? get_footer(); ?>
