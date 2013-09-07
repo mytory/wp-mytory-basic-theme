@@ -36,5 +36,12 @@
         </form>
       </div>
     </div>
-    <?php wp_nav_menu( array( 'theme_location' => 'main-nav', 'menu_class' => 'nav nav--fit nav--block nav--banner main-nav' ) ); ?>
+    <?php 
+    $opt = array(
+      'theme_location' => 'main-nav', 
+      'menu_class' => 'nav nav--fit nav--block nav--banner main-nav',
+      'walker' => new MBT_Walker_Nav_Menu,
+    );
+    wp_nav_menu($opt); 
+    ?>
   </div>

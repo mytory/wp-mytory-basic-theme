@@ -1,5 +1,6 @@
 @charset "UTF-8";
-/*Theme Name: Mytory Basic Theme
+/*!
+ *Theme Name: Mytory Basic Theme
  *Theme URI: https://github.com/mytory/wp-mytory-basic-theme
  *Description: Mytory가 만든 inuit.css 기반의 사이트 제작용 기본 템플릿 테마
  *Author: Ahn, Hyoung-woo
@@ -48,7 +49,7 @@
 /*------------------------------------*\
     INUIT.CSS
 \*------------------------------------*/
-/**
+/*!*
  * 
  * inuitcss.com -- @inuitcss -- @csswizardry
  * 
@@ -968,7 +969,7 @@ td {
  */
 .table--bordered th,
 .table--bordered td {
-  border: 1px solid #cccccc;
+  border: 1px solid #ccc;
   /* Override this color in your theme stylesheet */
 }
 .table--bordered th:empty,
@@ -1560,7 +1561,7 @@ html.flexbox {
  * 
  */
 .options > li > a {
-  border: 0 solid #cccccc;
+  border: 0 solid #ccc;
   /* Extend in your theme stylesheet */
   border-width: 1px;
   border-left-width: 0;
@@ -1788,7 +1789,7 @@ html.flexbox {
  */
 .block-list,
 .block-list > li {
-  border: 0 solid #cccccc;
+  border: 0 solid #ccc;
   /* Override this color in your theme stylesheet */
 }
 
@@ -1829,7 +1830,7 @@ html.flexbox {
  */
 .matrix,
 .matrix > li {
-  border: 0 solid #cccccc;
+  border: 0 solid #ccc;
   /* Override this color in your theme stylesheet */
 }
 
@@ -2988,7 +2989,7 @@ html.flexbox {
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-/*
+/*!*
  * 
  * @csswizardry -- csswizardry.com/beautons
  */
@@ -3278,10 +3279,43 @@ button, .btn, #commentform #submit, input {
 
 .main-nav {
   background: #4a8ec2;
-  border-radius: 4;
+  border-radius: 4px;
 }
 .main-nav a {
   color: white;
+}
+.main-nav .sub-menu {
+  display: none;
+  background: white;
+  border: 1px solid #4a8ec2;
+  border-radius: 4px;
+  margin: 0;
+  text-align: left;
+}
+.main-nav .sub-menu li.menu-item {
+  list-style: none;
+}
+.main-nav .sub-menu a {
+  color: #4a8ec2;
+  padding: 1em;
+  display: block;
+}
+.main-nav .sub-menu a:hover {
+  background: #4a8ec2;
+  color: white;
+}
+
+.main-nav__li1--has-child > a:after {
+  content: " ▼";
+  font-size: 10px;
+}
+.main-nav__li1--has-child:hover {
+  position: relative;
+}
+.main-nav__li1--has-child:hover .sub-menu {
+  display: block;
+  position: absolute;
+  width: 200%;
 }
 
 @media screen and (max-width: 500px) {

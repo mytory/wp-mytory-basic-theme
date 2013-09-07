@@ -65,41 +65,47 @@ function mbt_scripts_styles() {
 }
 add_action( 'wp_enqueue_scripts', 'mbt_scripts_styles' );
 
-/**
-* 변수의 구성요소를 리턴받는다.
-*/
-function getPrintr($var, $title = NULL)
-{
-    $dump = '';
-    $dump .=  '<div align="left">';
-    $dump .=  '<pre style="background-color:#000; color:#00ff00; padding:5px; font-size:14px;">';
-    if( $title )
-    {
-        $dump .=  "<strong style='color:#fff'>{$title} :</strong> \n";
+if( ! function_exists('getPrintr')){
+    /**
+    * 변수의 구성요소를 리턴받는다.
+    */
+    function getPrintr($var, $title = NULL){
+        $dump = '';
+        $dump .=  '<div align="left">';
+        $dump .=  '<pre style="background-color:#000; color:#00ff00; padding:5px; font-size:14px;">';
+        if( $title )
+        {
+            $dump .=  "<strong style='color:#fff'>{$title} :</strong> \n";
+        }
+        $dump .= print_r($var, TRUE);
+        $dump .=  '</pre>';
+        $dump .=  '</div>';
+        $dump .=  '<br />';
+        return $dump;
     }
-    $dump .= print_r($var, TRUE);
-    $dump .=  '</pre>';
-    $dump .=  '</div>';
-    $dump .=  '<br />';
-    return $dump;
 }
 
-/**
- * 변수의 구성요소를 출력한다.
- */
-function printr($var, $title = NULL)
-{
-    $dump = getPrintr($var, $title);
-    echo $dump;
+if( ! function_exists('printr')){
+    /**
+     * 변수의 구성요소를 출력한다.
+     */
+    function printr($var, $title = NULL)
+    {
+        $dump = getPrintr($var, $title);
+        echo $dump;
+    }
 }
 
-/**
- * 변수의 구성요소를 출력하고 멈춘다.
- */
-function printr2($var, $title = NULL)
-{
-    printr($var, $title);
-    exit;
+if( ! function_exists('printr2')){
+    /**
+     * 변수의 구성요소를 출력하고 멈춘다.
+     */
+    function printr2($var, $title = NULL)
+    {
+        printr($var, $title);
+        exit;
+    }
 }
 
 include 'functions-custom-post-type.php';
+include 'functions-nav.php';
