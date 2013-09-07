@@ -2,6 +2,15 @@
 class MBT_Walker_Nav_Menu extends Walker_Nav_Menu{
 
     /**
+     * Walker class에 있는 walk 함수를 복사한 뒤 아래 코드만 추가한 것임.
+     * 1. 탑 레벨 메뉴에 main-nav__li1이라는 클래스를 붙인다.
+     * 2. 서브메뉴를 가진 탑레벨 메뉴에는 'main-nav__li1--has-child'라는 클래스를 붙인다.
+     * 
+     * $e->classes[] = 'main-nav__li1';
+     * if( ! empty($children_elements)){
+     *     $e->classes[] = 'main-nav__li1--has-child';
+     * }
+     *  
      * Display array of elements hierarchically.
      *
      * It is a generic function which does not assume any existing order of
