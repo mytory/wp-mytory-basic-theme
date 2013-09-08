@@ -107,5 +107,24 @@ if( ! function_exists('printr2')){
     }
 }
 
+function mbt_paging_nav() {
+    global $wp_query;
+
+    // Don't print empty markup if there's only one page.
+    if ( $wp_query->max_num_pages < 2 )
+        return;
+    ?>
+    <nav class="paging-nav cf" role="navigation">
+        <?php if ( get_next_posts_link() ) { ?>
+        <div class="paging-nav__next"><?php next_posts_link('다음 ▷'); ?></div>
+        <?php } ?>
+
+        <?php if ( get_previous_posts_link() ) { ?>
+        <div class="paging-nav__prev"><?php previous_posts_link('◁ 이전'); ?></div>
+        <?php } ?>
+    </nav><!-- .navigation -->
+    <?php
+}
+
 include 'functions-custom-post-type.php';
 include 'functions-nav.php';

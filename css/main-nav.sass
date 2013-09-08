@@ -1,0 +1,40 @@
+.main-nav
+  background: $brand-color
+  border-radius: $brand-round+px
+  a:hover
+    text-decoration: none
+
+.main-nav__li1
+  > a
+    color: #fff
+.main-nav__li1 > a:hover, .current-menu-item
+  border-radius: $brand-round+px
+  background-color: darken($brand-color, 8%)
+.main-nav__li1--has-child 
+  position: relative
+  &:hover .sub-menu
+    display: block
+    opacity: 1
+  > a:after
+    content: ' ▼'
+    font-size: 10px
+
+.sub-menu
+  position: absolute
+  width: 200px
+  background: white
+  border: 1px solid $brand-color
+  border-radius: $brand-round+px
+  margin: 0
+  text-align: left
+  opacity: 0
+  @include vendor(transition, opacity 200ms linear)
+  li.menu-item
+    list-style: none
+  a
+    color: $brand-color 
+    padding: 1em
+    display: block
+    &:hover
+      background: lighten($brand-color, 8%)
+      color: #fff
