@@ -19,7 +19,7 @@ $debug-mode:        false;
  * Base stuff
  */
 $base-font-size:    14!default;
-$base-line-height:  $base-font-size*1.7!default;
+$base-line-height:  $base-font-size*1.6!default;
 
 $line-height-ratio: $base-line-height / $base-font-size;
 
@@ -53,11 +53,21 @@ $h6-size:           $base-font-size*1!default;
 $milli-size:        $base-font-size*0.75!default;
 $micro-size:        $base-font-size*0.625!default;
 
+/**
+ * flat ui color 
+ * http://designmodo.com/demo/flat-ui/
+ */
+$asbestos-color:    #7F8C8D!default;
+$wet-asphalt-color: #34495E!default;
+$midnight-blue-color: #2C3E50!default;
+$emerald-color:     #2ECC71!default;
+$nephritis-color:   #27AE60!default;
 
 /**
  * Brand stuff
  */
-$brand-color:       #4a8ec2!default;
+$brand-color:       $emerald-color!default;
+$brand-color2:      $nephritis-color!default;
 $brand-face:        Arial,'Apple SD Gothic Neo','Malgun Gothic','nanumgothic',sans-serif!default;
 
 

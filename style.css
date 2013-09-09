@@ -40,6 +40,10 @@
  * Font-sizes (in pixels). Refer to relevant sections for their implementations.
  */
 /**
+ * flat ui color 
+ * http://designmodo.com/demo/flat-ui/
+ */
+/**
  * Brand stuff
  */
 /**
@@ -364,11 +368,12 @@ table,
 fieldset, figure,
 pre,
 .form-fields > li,
+.post-meta,
 .media,
 .island,
 .islet {
-  margin-bottom: 23.8px;
-  margin-bottom: 1.7rem;
+  margin-bottom: 22.4px;
+  margin-bottom: 1.6rem;
 }
 .islet h1, .islet h2, .islet h3, .islet h4, .islet h5, .islet h6, .islet hgroup, .islet
 ul, .islet ol, .islet dl, .islet
@@ -376,19 +381,20 @@ blockquote, .islet p, .islet address, .islet
 table, .islet
 fieldset, .islet figure, .islet
 pre, .islet .form-fields > li, .islet
+.post-meta, .islet
 .media, .islet
 .island, .islet
 .islet {
-  margin-bottom: 11.9px;
-  margin-bottom: 0.85rem;
+  margin-bottom: 11.2px;
+  margin-bottom: 0.8rem;
 }
 
 /**
  * Doubled up `margin-bottom` helper class.
  */
 .landmark {
-  margin-bottom: 47.6px;
-  margin-bottom: 3.4rem;
+  margin-bottom: 44.8px;
+  margin-bottom: 3.2rem;
 }
 
 /**
@@ -396,8 +402,8 @@ pre, .islet .form-fields > li, .islet
  * treatment regarding vertical rhythm.
  */
 hr {
-  margin-bottom: 21.8px;
-  margin-bottom: 1.55714rem;
+  margin-bottom: 20.4px;
+  margin-bottom: 1.45714rem;
 }
 
 /**
@@ -405,8 +411,8 @@ hr {
  * by a consistent amount. Define that amount once, here.
  */
 ul, ol, dd {
-  margin-left: 47.6px;
-  margin-left: 3.4rem;
+  margin-left: 44.8px;
+  margin-left: 3.2rem;
 }
 
 /**
@@ -416,7 +422,7 @@ ul, ol, dd {
     $MAIN
 \*------------------------------------*/
 html {
-  font: 0.875em/1.7 serif;
+  font: 0.875em/1.6 serif;
   overflow-y: scroll;
   min-height: 100%;
 }
@@ -434,37 +440,37 @@ html {
 h1, .alpha {
   font-size: 31.5px;
   font-size: 2.25rem;
-  line-height: 1.51111;
+  line-height: 1.42222;
 }
 
 h2, .beta {
   font-size: 26.25px;
   font-size: 1.875rem;
-  line-height: 1.81333;
+  line-height: 1.70667;
 }
 
 h3, .gamma {
   font-size: 21.875px;
   font-size: 1.5625rem;
-  line-height: 1.088;
+  line-height: 1.024;
 }
 
 h4, .delta {
   font-size: 17.5px;
   font-size: 1.25rem;
-  line-height: 1.36;
+  line-height: 1.28;
 }
 
 h5, .epsilon {
   font-size: 14px;
   font-size: 1rem;
-  line-height: 1.7;
+  line-height: 1.6;
 }
 
 h6, .zeta {
   font-size: 14px;
   font-size: 1rem;
-  line-height: 1.7;
+  line-height: 1.6;
 }
 
 /**
@@ -488,19 +494,19 @@ hgroup .hN {
 .giga {
   font-size: 84px;
   font-size: 6rem;
-  line-height: 1.13333;
+  line-height: 1.06667;
 }
 
 .mega {
   font-size: 63px;
   font-size: 4.5rem;
-  line-height: 1.13333;
+  line-height: 1.06667;
 }
 
 .kilo {
   font-size: 42px;
   font-size: 3rem;
-  line-height: 1.13333;
+  line-height: 1.06667;
 }
 
 /*------------------------------------*\
@@ -514,7 +520,7 @@ hgroup .hN {
 .lead {
   font-size: 15.75px;
   font-size: 1.125rem;
-  line-height: 1.51111;
+  line-height: 1.42222;
 }
 
 /*------------------------------------*\
@@ -534,13 +540,13 @@ small {
 .milli {
   font-size: 10.5px;
   font-size: 0.75rem;
-  line-height: 2.26667;
+  line-height: 2.13333;
 }
 
 .micro {
   font-size: 8.75px;
   font-size: 0.625rem;
-  line-height: 2.72;
+  line-height: 2.56;
 }
 
 /*------------------------------------*\
@@ -816,13 +822,13 @@ table {
 
 th,
 td {
-  padding: 5.95px;
+  padding: 5.6px;
   text-align: left;
 }
 @media screen and (min-width: 480px) {
   th,
   td {
-    padding: 11.9px;
+    padding: 11.2px;
   }
 }
 
@@ -1007,7 +1013,7 @@ td {
  * 
  */
 fieldset {
-  padding: 23.8px;
+  padding: 22.4px;
 }
 
 /**
@@ -1217,7 +1223,7 @@ label,
   /**
    * Negative margin to negate the padding on the first grid child. 
    */
-  margin-left: -23.8px;
+  margin-left: -22.4px;
   /**
    * The following declarations allow us to use the `.gw` class on lists.
    */
@@ -1262,7 +1268,7 @@ label,
 .g,
 .grid {
   float: left;
-  padding-left: 23.8px;
+  padding-left: 22.4px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -1306,8 +1312,8 @@ label,
 
 .ie7-grid .gw,
 .ie7-grid .grid-wrapper {
-  margin-right: -11.9px;
-  margin-left: -11.9px;
+  margin-right: -11.2px;
+  margin-left: -11.2px;
 }
 
 .ie7-grid .g,
@@ -1317,8 +1323,8 @@ label,
 
 .ie7-grid .g__inner,
 .ie7-grid .grid__inner {
-  padding-right: 11.9px;
-  padding-left: 11.9px;
+  padding-right: 11.2px;
+  padding-left: 11.2px;
 }
 
 /*------------------------------------*\
@@ -1385,11 +1391,11 @@ html.flexbox {
  * 
  */
 .text-cols--2, .text-cols--3, .text-cols--4, .text-cols--5 {
-  -webkit-column-gap: 23.8px;
-  -moz-column-gap: 23.8px;
-  -ms-column-gap: 23.8px;
-  -o-column-gap: 23.8px;
-  column-gap: 23.8px;
+  -webkit-column-gap: 22.4px;
+  -moz-column-gap: 22.4px;
+  -ms-column-gap: 22.4px;
+  -o-column-gap: 22.4px;
+  column-gap: 22.4px;
 }
 
 .text-cols--2 {
@@ -1502,7 +1508,7 @@ html.flexbox {
   line-height: 1;
 }
 .nav--block > li > a, .options > li > a {
-  padding: 11.9px;
+  padding: 11.2px;
 }
 
 /**
@@ -1602,12 +1608,12 @@ html.flexbox {
 }
 
 .pagination > li {
-  padding: 11.9px;
+  padding: 11.2px;
 }
 
 .pagination > li > a {
-  padding: 11.9px;
-  margin: -11.9px;
+  padding: 11.2px;
+  margin: -11.2px;
 }
 
 .pagination__first a:before {
@@ -1698,7 +1704,7 @@ html.flexbox {
 
 .media__img {
   float: left;
-  margin-right: 23.8px;
+  margin-right: 22.4px;
 }
 
 /**
@@ -1706,7 +1712,7 @@ html.flexbox {
  */
 .media__img--rev {
   float: right;
-  margin-left: 23.8px;
+  margin-left: 22.4px;
 }
 
 .media__img img,
@@ -1727,11 +1733,11 @@ html.flexbox {
  * `.img`s in `.islet`s need an appropriately sized margin.
  */
 .islet .media__img {
-  margin-right: 11.9px;
+  margin-right: 11.2px;
 }
 
 .islet .media__img--rev {
-  margin-left: 11.9px;
+  margin-left: 11.2px;
 }
 
 /*------------------------------------*\
@@ -1754,7 +1760,7 @@ html.flexbox {
 }
 
 .island {
-  padding: 23.8px;
+  padding: 22.4px;
 }
 
 .island > :last-child,
@@ -1766,7 +1772,7 @@ html.flexbox {
  * Just like `.island`, only smaller.
  */
 .islet {
-  padding: 11.9px;
+  padding: 11.2px;
 }
 
 /*------------------------------------*\
@@ -1800,13 +1806,13 @@ html.flexbox {
 }
 .block-list > li {
   border-bottom-width: 1px;
-  padding: 11.9px;
+  padding: 11.2px;
 }
 
 .block-list__link {
   display: block;
-  padding: 11.9px;
-  margin: -11.9px;
+  padding: 11.2px;
+  margin: -11.2px;
 }
 
 /*------------------------------------*\
@@ -1841,7 +1847,7 @@ html.flexbox {
   border-left-width: 1px;
 }
 .matrix > li {
-  padding: 11.9px;
+  padding: 11.2px;
   float: left;
   border-right-width: 1px;
   border-bottom-width: 1px;
@@ -1854,8 +1860,8 @@ html.flexbox {
 
 .matrix__link {
   display: block;
-  padding: 11.9px;
-  margin: -11.9px;
+  padding: 11.2px;
+  margin: -11.2px;
 }
 
 /**
@@ -2259,9 +2265,9 @@ html.flexbox {
    * the same width as the `line-height` set on the `html` element.
    * This allows us to use the `.loz` in almost any `font-size` we wish.
    */
-  min-width: 1.13333em;
-  padding-right: 0.28333em;
-  padding-left: 0.28333em;
+  min-width: 1.06667em;
+  padding-right: 0.26667em;
+  padding-left: 0.26667em;
   /* =1.50em */
   text-align: center;
   background-color: #ccc;
@@ -2295,8 +2301,8 @@ html.flexbox {
   border: none;
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  margin-bottom: 22.8px;
-  margin-bottom: 1.62857rem;
+  margin-bottom: 21.4px;
+  margin-bottom: 1.52857rem;
 }
 
 /**
@@ -2365,12 +2371,12 @@ html.flexbox {
  *
  */
 .stat-group {
-  margin-left: -23.8px;
+  margin-left: -22.4px;
 }
 
 .stat {
   float: left;
-  margin-left: 23.8px;
+  margin-left: 22.4px;
   display: -webkit-box;
   display: -moz-box;
   display: box;
@@ -2427,7 +2433,7 @@ html.flexbox {
 .graybox {
   font-size: 12px;
   font-size: 0.85714rem;
-  line-height: 1.98333;
+  line-height: 1.86667;
   font-family: sans-serif;
   text-align: center;
   background-color: rgba(0, 0, 0, 0.2);
@@ -2446,27 +2452,27 @@ html.flexbox {
  */
 .greybox--small,
 .graybox--small {
-  line-height: 47.6px;
+  line-height: 44.8px;
 }
 
 .greybox--medium,
 .graybox--medium {
-  line-height: 95.2px;
+  line-height: 89.6px;
 }
 
 .greybox--large,
 .graybox--large {
-  line-height: 190.4px;
+  line-height: 179.2px;
 }
 
 .greybox--huge,
 .graybox--huge {
-  line-height: 380.8px;
+  line-height: 358.4px;
 }
 
 .greybox--gigantic,
 .graybox--gigantic {
-  line-height: 761.6px;
+  line-height: 716.8px;
 }
 
 /**
@@ -2872,7 +2878,7 @@ html.flexbox {
  */
 .brand {
   font-family: Arial, "Apple SD Gothic Neo", "Malgun Gothic", "nanumgothic", sans-serif!important;
-  color: #4a8ec2!important;
+  color: #2ecc71!important;
 }
 
 .brand-face {
@@ -2881,7 +2887,7 @@ html.flexbox {
 
 .brand-color,
 .brand-colour {
-  color: #4a8ec2!important;
+  color: #2ecc71!important;
 }
 
 /*------------------------------------*\
@@ -2910,12 +2916,12 @@ html.flexbox {
  * Pull items full width of `.island` parents.
  */
 .full-bleed {
-  margin-right: -23.8px;
-  margin-left: -23.8px;
+  margin-right: -22.4px;
+  margin-left: -22.4px;
 }
 .islet .full-bleed {
-  margin-right: -11.9px;
-  margin-left: -11.9px;
+  margin-right: -11.2px;
+  margin-left: -11.2px;
 }
 
 /**
@@ -3194,6 +3200,100 @@ html.flexbox {
   border-radius: 0;
 }
 
+.site-name {
+  margin-bottom: 22.4px;
+  float: left;
+}
+.site-name a {
+  font-size: 20px;
+  font-weight: bold;
+}
+.site-name a:hover {
+  color: #2ecc71;
+  text-decoration: none;
+}
+
+.search-box {
+  float: right;
+  margin-bottom: 22.4px;
+}
+
+.content a:link {
+  color: #27ae60;
+}
+.content:link:hover {
+  color: white;
+  background-color: #27ae60;
+  padding: 1px 0;
+  text-decoration: none;
+}
+.content a:visited {
+  color: #2ecc71;
+}
+.content a:visited:hover {
+  color: white;
+  background-color: #2ecc71;
+}
+
+.body {
+  margin-bottom: 22.4px;
+}
+
+.alist__li {
+  margin-bottom: 0.5em;
+}
+
+.alist__li a:link, .post-meta a:link, .yarpp-related a:link {
+  color: #2c3e50;
+}
+.alist__li a:link:hover, .post-meta a:link:hover, .yarpp-related a:link:hover {
+  color: white;
+  background-color: #2c3e50;
+  padding: 1px 0;
+  text-decoration: none;
+}
+.alist__li a:visited, .post-meta a:visited, .yarpp-related a:visited {
+  color: #7f8c8d;
+}
+.alist__li a:visited:hover, .post-meta a:visited:hover, .yarpp-related a:visited:hover {
+  color: white;
+  background-color: #7f8c8d;
+}
+
+.post-meta {
+  font-size: 0.9em;
+}
+.post-meta > ul {
+  margin: 0;
+  margin-left: 22.4px;
+}
+
+.site-footer {
+  padding: 22.4px;
+  background: #34495e;
+  clear: both;
+  text-align: center;
+}
+
+.site-footer {
+  color: white;
+}
+
+.site-footer a {
+  color: white;
+  text-decoration: underline;
+  font-weight: normal;
+}
+
+.addr {
+  margin-bottom: 0;
+  font-style: normal;
+}
+
+.addr__item {
+  margin-right: 11.2px;
+}
+
 .paging-nav {
   margin-bottom: 1em;
 }
@@ -3207,14 +3307,14 @@ html.flexbox {
 }
 
 .wp-pagenavi {
-  margin-bottom: 23.8px;
+  margin-bottom: 22.4px;
   text-align: center;
 }
 
-.main-nav {
-  background: #4a8ec2;
-  border-radius: 4px;
+.main-nav-wrapper {
+  background: #2ecc71;
 }
+
 .main-nav a:hover {
   text-decoration: none;
 }
@@ -3224,12 +3324,7 @@ html.flexbox {
 }
 
 .main-nav__li1 > a:hover, .current-menu-item > a {
-  border-radius: 4px;
-  background-color: #3979aa;
-  border-right: 1px solid rgba(0, 0, 0, 0.1);
-  border-left: 1px solid rgba(0, 0, 0, 0.1);
-  margin-right: -1px;
-  margin-left: -1px;
+  background-color: #34495e;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
@@ -3250,7 +3345,7 @@ html.flexbox {
   position: absolute;
   width: 200px;
   background: white;
-  border: 1px solid #4a8ec2;
+  border: 1px solid #34495e;
   border-radius: 4px;
   margin: 0;
   text-align: left;
@@ -3259,12 +3354,12 @@ html.flexbox {
   list-style: none;
 }
 .sub-menu a {
-  color: #4a8ec2;
+  color: #34495e;
   padding: 1em;
   display: block;
 }
 .sub-menu a:hover {
-  background: #69a1cc;
+  background: #34495e;
   color: white;
 }
 
@@ -3409,18 +3504,14 @@ body {
 }
 
 a {
-  color: #4a8ec2;
+  color: #2c3e50;
   font-weight: bold;
-}
-
-.content a:link:hover, .post-meta a:link:hover, .site-name a:link:hover {
-  color: #96bedc;
 }
 
 @media screen and (max-width: 500px) {
   ul, ol, dd {
-    margin-left: 23.8px;
-    margin-left: 23.8px/14rem;
+    margin-left: 22.4px;
+    margin-left: 22.4px/14rem;
   }
 }
 
@@ -3444,50 +3535,23 @@ input[type=checkbox], input[type=radio], input[type=button], input[type=submit],
   border: none;
 }
 
-.wrapper {
-  max-width: 700px;
+.top-blank {
+  height: 22.4px;
+}
+
+.content-width, .main-nav, .body, .header__row1 {
+  margin-right: auto;
+  margin-left: auto;
   padding: 0 20px;
-  margin: 20px auto;
+  max-width: 700px;
 }
 
-.site-name {
-  margin-bottom: 23.8px;
-  float: left;
-}
-.site-name a {
-  font-size: 20px;
-  font-weight: bold;
+.brand-line {
+  border-top: 1px solid #2ecc71;
 }
 
-.search-box {
-  float: right;
-  margin-bottom: 23.8px;
-}
-
-.body {
-  margin-bottom: 23.8px;
-  border-bottom: 1px solid #e3edf5;
-}
-
-.home-li {
-  margin-bottom: 0.5em;
-}
-
-.site-footer {
-  padding: 23.8px;
-  clear: both;
-  text-align: center;
-}
-
-.site-footer, .site-footer a {
-  color: #bcd5e9;
-}
-
-.tech-list a {
-  border-left: 1px solid #bcd5e9;
-}
-.tech-list a:first-child {
-  border-left: none;
+.wet-asphalt-line {
+  border-top: 1px solid #34495e;
 }
 
 @media screen and (max-width: 500px) {
@@ -3505,11 +3569,11 @@ input[type=checkbox], input[type=radio], input[type=button], input[type=submit],
 }
 
 #commentform #submit {
-  background-color: #4a8ec2;
+  background-color: #2c3e50;
 }
 
 .btn, #commentform #submit {
-  background-color: #4a8ec2;
+  background-color: #2c3e50;
 }
 
 .sns-button {
@@ -3517,7 +3581,7 @@ input[type=checkbox], input[type=radio], input[type=button], input[type=submit],
 }
 
 .rss-link {
-  margin-left: 11.9px;
+  margin-left: 11.2px;
 }
 
 .content img, .wp-caption {
@@ -3530,8 +3594,9 @@ input[type=checkbox], input[type=radio], input[type=button], input[type=submit],
 .content pre {
   font-size: 0.8em;
   padding: 1em;
-  border: 1px solid #bcd5e9;
   border-radius: 4px;
+  color: white;
+  background-color: #34495e;
 }
 
 .video-container {
@@ -3555,8 +3620,8 @@ input[type=checkbox], input[type=radio], input[type=button], input[type=submit],
 }
 
 .sidebar {
-  border-bottom: 1px solid #e3edf5;
-  margin-bottom: 23.8px;
+  border-bottom: 1px solid #d1f5e0;
+  margin-bottom: 22.4px;
 }
 .sidebar li {
   list-style-type: none;
@@ -3568,7 +3633,7 @@ input[type=checkbox], input[type=radio], input[type=button], input[type=submit],
 }
 .sidebar__one .widget {
   list-style-type: none;
-  margin-bottom: 23.8px;
+  margin-bottom: 22.4px;
 }
 .sidebar__one ul {
   margin: 0;
@@ -3593,7 +3658,7 @@ input[type=checkbox], input[type=radio], input[type=button], input[type=submit],
 @media screen and (max-width: 600px) {
   .sidebar__column {
     width: 100%;
-    margin-bottom: 23.8px;
+    margin-bottom: 22.4px;
   }
 }
 

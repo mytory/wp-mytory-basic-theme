@@ -1,6 +1,7 @@
 <?
 if(mbt_is_there_sidebar(array('sidebar-left', 'sidebar-center', 'sidebar-right'))) :
 ?>
+<div class="brand-line"></div>
 <!--[if lte IE 7]><div class=ie7-grid><![endif]-->
 <aside class="sidebar">
 	<div class="gw">

@@ -1,6 +1,7 @@
-.main-nav
+.main-nav-wrapper
   background: $brand-color
-  border-radius: $brand-round+px
+  
+.main-nav
   a:hover
     text-decoration: none
 
@@ -8,12 +9,8 @@
   color: #fff
 
 .main-nav__li1 > a:hover, .current-menu-item > a
-  border-radius: $brand-round+px
-  background-color: darken($brand-color, 8%)
-  border-right: 1px solid rgba(0,0,0,0.1)
-  border-left: 1px solid rgba(0,0,0,0.1)
-  margin-right: -1px
-  margin-left: -1px
+  // background-color: $emerald-color
+  background-color: $wet-asphalt-color
   @include vendor(box-sizing, border-box)
 
 .main-nav__li1--has-child 
@@ -27,18 +24,18 @@
   position: absolute
   width: 200px
   background: white
-  border: 1px solid $brand-color
+  border: 1px solid $wet-asphalt-color
   border-radius: $brand-round+px
   margin: 0
   text-align: left
   li.menu-item
     list-style: none
   a
-    color: $brand-color 
+    color: $wet-asphalt-color
     padding: 1em
     display: block
     &:hover
-      background: lighten($brand-color, 8%)
+      background: $wet-asphalt-color
       color: #fff
 
 .main-nav__li1--has-child:hover

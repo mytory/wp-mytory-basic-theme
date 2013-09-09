@@ -24,7 +24,8 @@
 <a class="accessibility" href="#content" title="본문으로 바로 가기">본문으로 바로 가기</a>
 <div class="wrapper">
   <div class="header">
-    <div class="cf">
+    <div class="top-blank"></div>
+    <div class="header__row1 cf">
       <div class="site-name">
         <a href="<?=home_url()?>"><?bloginfo( 'name' ); ?></a>
         <a class="rss-link" href="<?bloginfo('rss_url')?>">RSS</a>
@@ -42,6 +43,10 @@
       'menu_class' => 'nav nav--fit nav--block nav--banner main-nav',
       'walker' => new MBT_Walker_Nav_Menu,
     );
+    ?>
+    <div class="main-nav-wrapper">
+    <?php
     wp_nav_menu($opt); 
     ?>
+    </div>
   </div>

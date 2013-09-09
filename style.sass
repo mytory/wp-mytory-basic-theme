@@ -19,18 +19,20 @@
 @import "inuit.css/vars"
 @import "inuit.css/inuit"
 @import "css/beautons"
+@import "css/header"
+@import "css/content"
+@import "css/site-footer"
 @import "css/paging-nav"
 @import "css/main-nav"
 @import "css/css3animation"
 
+.top-blank
+
 body
   font-family: $brand-face
 a
-  color: $brand-color
+  color: $midnight-blue-color
   font-weight: bold
-.content, .post-meta, .site-name
-  a:link:hover
-    color: lighten($brand-color, 20%)
 ul,ol,dd
   @media screen and (max-width: 500px)
     margin-left: $base-spacing-unit +px
@@ -52,41 +54,22 @@ input, textarea
 input[type=checkbox], input[type=radio], input[type=button], input[type=submit], input[type=image], input[type=file], input[type=reset]
   border: none
 
-.wrapper
-  max-width: 700px
+.top-blank
+  height: $base-spacing-unit+px
+
+.content-width
+  margin-right: auto
+  margin-left: auto
   padding: 0 20px
-  margin: 20px auto
+  max-width: 700px
 
-// header
-.site-name 
-  margin-bottom: $base-spacing-unit +px
-  float: left
-  a
-    font-size: 20px
-    font-weight: bold
-.search-box
-  float: right
-  margin-bottom: $base-spacing-unit +px
+.brand-line
+  border-top: 1px solid $brand-color
+.wet-asphalt-line
+  border-top: 1px solid $wet-asphalt-color
 
-// body
-.body
-  margin-bottom: $base-spacing-unit +px
-  border-bottom: 1px solid lighten($brand-color, 40%)
-.home-li
-  margin-bottom: 0.5em
-
-// footer
-.site-footer
-  padding: $base-spacing-unit +px
-  clear: both
-  text-align: center
-.site-footer, .site-footer a
-  color: lighten($brand-color, 30%)
-.tech-list
-  a
-    border-left: 1px solid lighten($brand-color, 30%)
-    &:first-child
-      border-left: none
+.main-nav, .body, .header__row1
+  @extend .content-width
 
 // custom
 .post-title
@@ -99,9 +82,9 @@ input[type=checkbox], input[type=radio], input[type=button], input[type=submit],
 #commentform
   #submit
     @extend .btn, .btn--full, .btn--positive
-    background-color: $brand-color
+    background-color: $midnight-blue-color
 .btn
-  background-color: $brand-color
+  background-color: $midnight-blue-color
 .sns-button
   text-align: center
 .rss-link
@@ -113,8 +96,9 @@ input[type=checkbox], input[type=radio], input[type=button], input[type=submit],
   pre
     font-size: 0.8em
     padding: 1em
-    border: 1px solid lighten($brand-color, 30%) 
     border-radius: $brand-round+px
+    color: #fff
+    background-color: $wet-asphalt-color
 
 // 반응형 비디오.
 .video-container
