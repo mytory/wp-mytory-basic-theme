@@ -1,0 +1,42 @@
+.content
+  a:link
+    color: $brand-color2
+  &:link:hover
+    color: #fff
+    background-color: $brand-color2
+    padding: 1px 0
+    text-decoration: none
+  a:visited
+    color: $brand-color
+  a:visited:hover
+    color: #fff
+    background-color: $brand-color
+
+// body
+.body
+  margin-bottom: $base-spacing-unit +px
+
+// alist = article-list
+.alist__li
+  margin-bottom: 0.5em
+.alist__li, .post-meta, .yarpp-related
+  a
+    &:link
+      color: $midnight-blue-color
+    &:link:hover
+      color: #fff
+      background-color: $midnight-blue-color
+      padding: 1px 0
+      text-decoration: none
+    &:visited
+      color: $asbestos-color
+    &:visited:hover
+      color: #fff
+      background-color: $asbestos-color
+
+.post-meta 
+  font-size: 0.9em
+  @extend %sass-margin-bottom
+  > ul
+    margin: 0
+    margin-left: $base-spacing-unit+px
