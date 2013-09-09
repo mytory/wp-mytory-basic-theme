@@ -3431,6 +3431,17 @@ blockquote {
 
 button, .btn, #commentform #submit, input {
   -webkit-appearance: none;
+  margin: 0;
+  border: none;
+}
+
+input, textarea {
+  border: 1px solid #dddddd;
+  border-radius: 4px;
+}
+
+input[type=checkbox], input[type=radio], input[type=button], input[type=submit], input[type=image], input[type=file], input[type=reset] {
+  border: none;
 }
 
 .wrapper {

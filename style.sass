@@ -41,7 +41,16 @@ blockquote
 
 // 아이폰이 덮어쓰는 버튼 스타일 초기화
 button, .btn, input
-  -webkit-appearance: none 
+  -webkit-appearance: none
+  margin: 0
+  border: none
+
+input, textarea
+  border: 1px solid #ddd
+  border-radius: $brand-round+px
+
+input[type=checkbox], input[type=radio], input[type=button], input[type=submit], input[type=image], input[type=file], input[type=reset]
+  border: none
 
 .wrapper
   max-width: 700px
