@@ -8,32 +8,33 @@ function mbt_setup() {
 
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menu( 'main-nav', '메인 내비게이션' );
-	
-	// 사이드바 세 개
-	register_sidebar(array(
-			'name' => '좌측',
-			'id' => 'sidebar-left',
-			'description' => '제일 왼쪽',
-			'before_title' => '<h3 class="sidebar-title">',
-			'after_title' => '</h3>'
-			));
-	register_sidebar(array(
-			'name' => '가운데',
-			'id' => 'sidebar-center',
-			'description' => '가운데 위치',
-			'before_title' => '<h3 class="sidebar-title">',
-			'after_title' => '</h3>'
-			));
-	register_sidebar(array(
-			'name' => '우측',
-			'id' => 'sidebar-right',
-			'description' => '제일 오른쪽',
-			'before_title' => '<h3 class="sidebar-title">',
-			'after_title' => '</h3>'
-			));
 }
 add_action( 'after_setup_theme', 'mbt_setup' );
 
+function mbt_register_sidebar(){
+    register_sidebar(array(
+            'name' => '좌측',
+            'id' => 'sidebar-left',
+            'description' => '제일 왼쪽',
+            'before_title' => '<h3 class="sidebar-title">',
+            'after_title' => '</h3>'
+    ));
+    register_sidebar(array(
+            'name' => '가운데',
+            'id' => 'sidebar-center',
+            'description' => '가운데 위치',
+            'before_title' => '<h3 class="sidebar-title">',
+            'after_title' => '</h3>'
+    ));
+    register_sidebar(array(
+            'name' => '우측',
+            'id' => 'sidebar-right',
+            'description' => '제일 오른쪽',
+            'before_title' => '<h3 class="sidebar-title">',
+            'after_title' => '</h3>'
+    ));
+}
+add_action('widgets_init', 'mbt_register_sidebar');
 /**
  * initialize style and script
  */
@@ -124,6 +125,16 @@ function mbt_paging_nav() {
         <?php } ?>
     </nav><!-- .navigation -->
     <?php
+}
+
+function mbt_is_there_sidebar($name_arr){
+    $widgets = wp_get_sidebars_widgets();
+    foreach ($name_arr as $sidebar_name) {
+        if( ! empty($widgets[$sidebar_name])){
+            return true;
+        }
+    }
+    return false;
 }
 
 include 'functions-custom-post-type.php';

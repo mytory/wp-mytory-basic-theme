@@ -3568,6 +3568,7 @@ input[type=checkbox], input[type=radio], input[type=button], input[type=submit],
 }
 .sidebar__one .widget {
   list-style-type: none;
+  margin-bottom: 23.8px;
 }
 .sidebar__one ul {
   margin: 0;
