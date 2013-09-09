@@ -3201,7 +3201,6 @@ html.flexbox {
 }
 
 .site-name {
-  margin-bottom: 22.4px;
   float: left;
 }
 .site-name a {
@@ -3211,6 +3210,16 @@ html.flexbox {
 .site-name a:hover {
   color: #2ecc71;
   text-decoration: none;
+}
+
+.others-wrapper {
+  float: left;
+  clear: both;
+}
+
+.others img {
+  width: 24px;
+  height: auto;
 }
 
 .search-box {
@@ -3321,6 +3330,8 @@ html.flexbox {
 
 .main-nav__li1 > a {
   color: white;
+  padding-top: 16px;
+  padding-bottom: 16px;
 }
 
 .main-nav__li1 > a:hover, .current-menu-item > a {
@@ -3574,14 +3585,6 @@ input[type=checkbox], input[type=radio], input[type=button], input[type=submit],
 
 .btn, #commentform #submit {
   background-color: #2c3e50;
-}
-
-.sns-button {
-  text-align: center;
-}
-
-.rss-link {
-  margin-left: 11.2px;
 }
 
 .content img, .wp-caption {
