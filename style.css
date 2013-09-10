@@ -3230,14 +3230,14 @@ html.flexbox {
 }
 
 .content a:link {
-  color: #27ae60;
+  color: #2ecc71;
 }
 .content a:visited {
-  color: #2ecc71;
+  color: #7f8c8d;
 }
 .content a:hover {
   color: white;
-  background-color: #27ae60;
+  background-color: #2ecc71;
   padding: 1px 0;
   text-decoration: none;
 }
@@ -3253,16 +3253,13 @@ html.flexbox {
 .alist__li a:link, .post-meta a:link, .yarpp-related a:link {
   color: #2c3e50;
 }
-.alist__li a:link:hover, .post-meta a:link:hover, .yarpp-related a:link:hover {
-  color: #27ae60;
-  padding: 1px 0;
-  text-decoration: none;
-}
 .alist__li a:visited, .post-meta a:visited, .yarpp-related a:visited {
   color: #7f8c8d;
 }
-.alist__li a:visited:hover, .post-meta a:visited:hover, .yarpp-related a:visited:hover {
+.alist__li a:hover, .post-meta a:hover, .yarpp-related a:hover {
   color: #2ecc71;
+  background-color: transparent;
+  text-decoration: none;
 }
 
 .post-meta {
