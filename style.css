@@ -3328,6 +3328,7 @@ html.flexbox {
   color: white;
   padding-top: 16px;
   padding-bottom: 16px;
+  font-weight: normal;
 }
 
 .main-nav__li1 > a:hover, .current-menu-item > a {
@@ -3508,6 +3509,7 @@ html.flexbox {
 
 body {
   font-family: Arial, "Apple SD Gothic Neo", "Malgun Gothic", "nanumgothic", sans-serif;
+  word-wrap: break-word;
 }
 
 a {
