@@ -50,6 +50,9 @@
             <a href="https://github.com/mytory" title="GitHub">
               <img src="<?php echo get_template_directory_uri()?>/images/icon-github.svg" alt="GitHub">
             </a>
+            <a href="<?php echo home_url('paypal-donation')?>" title="PayPal Donation">
+              <img src="<?php echo get_template_directory_uri()?>/images/icon-paypal.svg" alt="PayPal Donation">
+            </a>
           </li>
         </ul>
       </div>
