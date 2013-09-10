@@ -41,7 +41,7 @@
       <div class="search-box">
         <form action="<?=home_url()?>">
           <input type="search" name="s" value="<?=isset($_GET['s']) ? $_GET['s'] : ''?>">
-          <input class="btn btn--small" type="submit" value="검색">
+          <input class="search-box__submit" type="submit" value="검색">
         </form>
       </div>
     </div>

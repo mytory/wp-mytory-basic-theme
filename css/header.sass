@@ -1,6 +1,9 @@
+.header
+  background: $midnight-blue-color
 .site-name 
   float: left
   a
+    color: white
     font-size: 35px
     font-weight: bold
     &:hover
@@ -18,3 +21,8 @@
 .search-box
   float: right
   margin-bottom: $base-spacing-unit +px
+.search-box__submit
+  @extend .btn
+  @extend .btn--small
+  background: $midnight-blue-color
+  color: white

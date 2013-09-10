@@ -2202,7 +2202,7 @@ html.flexbox {
  * Demo: jsfiddle.net/inuitcss/RqHcp
  * 
  */
-.btn, #commentform #submit {
+.btn, .search-box__submit, #commentform #submit {
   font: inherit;
   cursor: pointer;
   border: none;
@@ -2216,8 +2216,9 @@ html.flexbox {
   padding: 0.5em;
 }
 
-.btn, #commentform #submit,
+.btn, .search-box__submit, #commentform #submit,
 .btn:hover,
+.search-box__submit:hover,
 #commentform #submit:hover {
   text-decoration: none;
 }
@@ -3020,7 +3021,7 @@ html.flexbox {
  *  9. Fixes odd inner spacing in IE7.
  * 10. Don’t allow buttons to have underlines; it kinda ruins the illusion.
  * 11. Prevents from inheriting default anchor styles. */
-.btn, #commentform #submit {
+.btn, .search-box__submit, #commentform #submit {
   display: inline-block;
   /* [1] */
   vertical-align: middle;
@@ -3060,20 +3061,20 @@ html.flexbox {
   color: white;
   /* [11] */
 }
-.btn:hover, #commentform #submit:hover, .btn:active, #commentform #submit:active, .btn:focus, #commentform #submit:focus, .btn:visited, #commentform #submit:visited {
+.btn:hover, .search-box__submit:hover, #commentform #submit:hover, .btn:active, .search-box__submit:active, #commentform #submit:active, .btn:focus, .search-box__submit:focus, #commentform #submit:focus, .btn:visited, .search-box__submit:visited, #commentform #submit:visited {
   text-decoration: none;
   /* [10] */
   color: white;
   /* [11] */
 }
-.btn:hover, #commentform #submit:hover {
+.btn:hover, .search-box__submit:hover, #commentform #submit:hover {
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
 }
-.btn:active, #commentform #submit:active, .btn:focus, #commentform #submit:focus {
+.btn:active, .search-box__submit:active, #commentform #submit:active, .btn:focus, .search-box__submit:focus, #commentform #submit:focus {
   outline: none;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.5) inset;
 }
-.btn::-moz-focus-inner, #commentform #submit::-moz-focus-inner {
+.btn::-moz-focus-inner, .search-box__submit::-moz-focus-inner, #commentform #submit::-moz-focus-inner {
   border: 0;
   padding: 0;
 }
@@ -3086,7 +3087,7 @@ html.flexbox {
  *
  * These all follow the same sizing rules as above; text is 1em, space around it
  * remains uniform. */
-.btn--small {
+.btn--small, .search-box__submit {
   padding-right: 0.5em;
   padding-left: 0.5em;
   line-height: 2;
@@ -3202,10 +3203,15 @@ html.flexbox {
   border-radius: 0;
 }
 
+.header {
+  background: #2c3e50;
+}
+
 .site-name {
   float: left;
 }
 .site-name a {
+  color: white;
   font-size: 35px;
   font-weight: bold;
 }
@@ -3227,6 +3233,11 @@ html.flexbox {
 .search-box {
   float: right;
   margin-bottom: 22.4px;
+}
+
+.search-box__submit {
+  background: #2c3e50;
+  color: white;
 }
 
 .content a:link {
@@ -3526,7 +3537,7 @@ blockquote {
   color: #666666;
 }
 
-button, .btn, #commentform #submit, input {
+button, .btn, .search-box__submit, #commentform #submit, input {
   -webkit-appearance: none;
   margin: 0;
   border: none;
@@ -3578,7 +3589,7 @@ input[type=checkbox], input[type=radio], input[type=button], input[type=submit],
   background-color: #2c3e50;
 }
 
-.btn, #commentform #submit {
+.btn, .search-box__submit, #commentform #submit {
   background-color: #2c3e50;
 }
 
@@ -3617,9 +3628,12 @@ input[type=checkbox], input[type=radio], input[type=button], input[type=submit],
   height: 100%;
 }
 
-.sidebar {
-  margin-bottom: 22.4px;
+.sidebar-wrapper {
+  padding: 22.4px;
+  padding-bottom: 0;
+  background-color: #ecf0f1;
 }
+
 .sidebar li {
   list-style-type: none;
 }
