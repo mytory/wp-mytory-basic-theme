@@ -29,33 +29,15 @@
       <div class="site-name">
         <a href="<?=home_url()?>"><?bloginfo( 'name' ); ?></a>
       </div>
-      <div class="others-wrapper cf">
-        <ul class="others nav">
-          <li>
-            <a href="<?php bloginfo('rss_url')?>" title="RSS">
-              <img src="<?php echo get_template_directory_uri()?>/images/icon-rss.svg" alt="RSS">
-            </a>
-            <a href="<?php echo home_url('%ec%9d%b4%eb%a9%94%ec%9d%bc%eb%a1%9c-%ea%b5%ac%eb%8f%85%ed%95%98%ea%b8%b0')?>" title="Newsletter">
-              <img src="<?php echo get_template_directory_uri()?>/images/icon-newsletter.svg" alt="Newsletter">
-            </a>
-            <a href="https://twitter.com/mytory" title="Twitter">
-              <img src="<?php echo get_template_directory_uri()?>/images/icon-twitter.svg" alt="Twitter">
-            </a>
-            <a href="https://facebook.com/mytorydev" title="Facebook Page">
-              <img src="<?php echo get_template_directory_uri()?>/images/icon-facebook.svg" alt="Facebook Page">
-            </a>
-            <a href="https://plus.google.com/112373772451309371763" title="Google+ Page">
-              <img src="<?php echo get_template_directory_uri()?>/images/icon-g+.svg" alt="Google+ Page">
-            </a>
-            <a href="https://github.com/mytory" title="GitHub">
-              <img src="<?php echo get_template_directory_uri()?>/images/icon-github.svg" alt="GitHub">
-            </a>
-            <a href="<?php echo home_url('paypal-donation')?>" title="PayPal Donation">
-              <img src="<?php echo get_template_directory_uri()?>/images/icon-paypal.svg" alt="PayPal Donation">
-            </a>
-          </li>
-        </ul>
-      </div>
+      <!--[if lt IE 9]>
+      <? mbt_print_header_others_ie(); ?>
+      <![endif]-->
+      <!--[if gte IE 9]>
+      <? mbt_print_header_others(); ?>
+      <![endif]-->
+      <!--[if !IE]> -->
+      <? mbt_print_header_others(); ?>
+      <!-- <![endif]-->
       <div class="search-box">
         <form action="<?=home_url()?>">
           <input type="search" name="s" value="<?=isset($_GET['s']) ? $_GET['s'] : ''?>">
