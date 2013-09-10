@@ -1,6 +1,6 @@
 <? get_header(); ?>
   <div class="body">
-    <div class="content">
+    <div class="list">
       <? if ( have_posts() ) : ?>
         <ul>
           <? while ( have_posts() ) : the_post(); ?>
