@@ -82,7 +82,7 @@ class MBT_Walker_Nav_Menu extends Walker_Nav_Menu{
 
         foreach ( $top_level_elements as $e ){
             $e->classes[] = 'main-nav__li1';
-            if( ! empty($children_elements)){
+            if( ! empty($children_elements[$e->ID])){
                 $e->classes[] = 'main-nav__li1--has-child';
             }
             $this->display_element( $e, $children_elements, $max_depth, 0, $args, $output );
