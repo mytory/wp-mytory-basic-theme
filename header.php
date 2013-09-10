@@ -35,7 +35,7 @@
             <a href="<?php bloginfo('rss_url')?>" title="RSS">
               <img src="<?php echo get_template_directory_uri()?>/images/icon-rss.svg" alt="RSS">
             </a>
-            <a href="<?php echo home_url('%ec%9d%b4%eb%a9%94%ec%9d%bc%eb%a1%9c-%ea%b5%ac%eb%8f%85%ed%95%98%ea%b8%b0')?>">
+            <a href="<?php echo home_url('%ec%9d%b4%eb%a9%94%ec%9d%bc%eb%a1%9c-%ea%b5%ac%eb%8f%85%ed%95%98%ea%b8%b0')?>" title="Newsletter">
               <img src="<?php echo get_template_directory_uri()?>/images/icon-newsletter.svg" alt="Newsletter">
             </a>
             <a href="https://twitter.com/mytory" title="Twitter">
