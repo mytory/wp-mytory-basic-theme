@@ -3546,7 +3546,7 @@ input[type=checkbox], input[type=radio], input[type=button], input[type=submit],
   height: 22.4px;
 }
 
-.content-width, .main-nav, .body, .header__row1 {
+.body-width, .main-nav, .body, .header__row1, .sidebar {
   margin-right: auto;
   margin-left: auto;
   padding: 0 20px;

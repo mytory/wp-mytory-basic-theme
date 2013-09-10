@@ -57,7 +57,7 @@ input[type=checkbox], input[type=radio], input[type=button], input[type=submit],
 .top-blank
   height: $base-spacing-unit+px
 
-.content-width
+.body-width
   margin-right: auto
   margin-left: auto
   padding: 0 20px
@@ -70,7 +70,7 @@ input[type=checkbox], input[type=radio], input[type=button], input[type=submit],
   border-top: 1px solid $wet-asphalt-color
 
 .main-nav, .body, .header__row1
-  @extend .content-width
+  @extend .body-width
 
 // custom
 .post-title
@@ -116,6 +116,7 @@ input[type=checkbox], input[type=radio], input[type=button], input[type=submit],
 .sidebar
   border-bottom: 1px solid lighten($brand-color, 40%) 
   margin-bottom: $base-spacing-unit +px
+  @extend .body-width
   li
     list-style-type: none
 .sidebar__one
