@@ -3619,7 +3619,6 @@ input[type=checkbox], input[type=radio], input[type=button], input[type=submit],
 }
 
 .sidebar {
-  border-bottom: 1px solid #d1f5e0;
   margin-bottom: 22.4px;
 }
 .sidebar li {
