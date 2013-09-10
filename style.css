@@ -369,6 +369,7 @@ fieldset, figure,
 pre,
 .form-fields > li,
 .post-meta,
+.brand-line,
 .media,
 .island,
 .islet {
@@ -382,6 +383,7 @@ table, .islet
 fieldset, .islet figure, .islet
 pre, .islet .form-fields > li, .islet
 .post-meta, .islet
+.brand-line, .islet
 .media, .islet
 .island, .islet
 .islet {
